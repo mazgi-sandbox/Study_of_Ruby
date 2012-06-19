@@ -1,4 +1,6 @@
 #--------
 # OSX
 .DS_Store
+# Ruby
+Gemfile.lock
 */vender/bundle
