@@ -4,3 +4,5 @@
 # Ruby
 Gemfile.lock
 */vender/bundle
+# Vim
+.*.swp
