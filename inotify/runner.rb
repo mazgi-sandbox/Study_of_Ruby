@@ -16,12 +16,12 @@ class Watcher
 
   def start
     puts "watch start with #{@path}"
-    counter=0
     @running=true
     Dir::glob(@path).each {|f|
       @files.push f
     }
     @thread = Thread.new do
+      counter=0
       while @running
         if counter%60==0
           puts '<<<begin thread block>>>'
