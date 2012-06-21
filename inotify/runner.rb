@@ -59,8 +59,10 @@ notifier.watch("event_source", :recursive, :create, :delete, :attrib) do |event|
   puts "event.watcher.path:#{event.watcher.path}"
   #puts "#{event.name} is now in #{EVENT_SOURCE}."
 
-  w.stop
-  w.start
+  #w.stop
+  #w.start
+
+  notifier.stop
 
   puts '<<<end inotify event block>>>'
 end
